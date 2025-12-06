@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقایسه پلن‌های میزبانی | AriaHost</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* استایل‌های اختصاصی برای جدول مقایسه */
+        .comparison-section {
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
 
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow-x: auto;
+            display: block; /* برای اسکرول افقی در موبایل */
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            min-width: 900px; /* حداقل عرض برای نمایش مناسب ستون‌ها */
+            border-collapse: collapse;
+        }
+
+        .comparison-table th, 
+        .comparison-table td {
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        .comparison-table th {
+            background-color: rgba(255, 255, 255, 0.05);
+            font-size: 1.1rem;
+            color: #ffd700;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .feature-name {
+            text-align: right !important;
+            font-weight: 600;
+            color: #fff;
+            width: 30%; 
+        }
+
+        .check-icon {
+            color: #2ecc71; 
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        .cross-icon {
+            color: #e74c3c; 
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .plan-header {
+            font-size: 1.4rem !important;
+            font-weight: 700 !important;
+        }
+        
+        .plan-price {
+            font-size: 1.2rem;
+            color: #ffd700;
+            font-weight: 700;
+        }
+
+        @media (max-width: 900px) {
+            .comparison-table table {
+                min-width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header glass-container">
+        <div class="logo">
+            <a href="../index.html">AriaHost</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="https://yourwhmcsdomain.com/clientarea.php" class="btn glass-container">ناحیه کاربری</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="comparison-section glass-container">
+            <h1 style="margin-bottom: 1rem;">مقایسه پلن‌های میزبانی AriaHost</h1>
+            <p style="font-size: 1.1rem; color: #ccc; margin-bottom: 3rem;">بهترین پلن را بر اساس نیازهای پروژه خود انتخاب کنید.</p>
+
+            <div class="comparison-table glass-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="feature-name">ویژگی</th>
+                            <th class="plan-header">هاست اشتراکی لینوکس</th>
+                            <th class="plan-header">سرور مجازی (VPS)</th>
+                            <th class="plan-header">سرور مجازی گیمینگ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">بهترین شروع قیمت (پایه)</td>
+                            <td class="plan-price">۹۹,۰۰۰ تومان</td>
+                            <td class="plan-price">۴۹۹,۰۰۰ تومان</td>
+                            <td class="plan-price">۱۹۹,۰۰۰ تومان</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">سطح منابع</td>
+                            <td>اشتراکی</td>
+                            <td>اختصاصی (KVM)</td>
+                            <td>اختصاصی (AMD Ryzen)</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">دسترسی Root/Shell</td>
+                            <td><span class="cross-icon">❌</span></td>
+                            <td><span class="check-icon">✅</span></td>
+                            <td><span class="check-icon">✅</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">مناسب برای</td>
+                            <td>سایت‌های شخصی و استارتاپی</td>
+                            <td>وب‌سایت‌های پرترافیک و نرم‌افزارها</td>
+                            <td>میزبانی سرور بازی و پلتفرم‌های گیمینگ</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">کنترل پنل میزبانی</td>
+                            <td>cPanel/DirectAdmin</td>
+                            <td>انتخابی (رایگان نیست)</td>
+                            <td>قابل نصب</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">مقابله با DDoS لایه ۷</td>
+                            <td>محدود</td>
+                            <td><span class="cross-icon">❌</span> (نیاز به Add-on)</td>
+                            <td><span class="check-icon">✅</span> (تضمین شده)</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">سرویس ایمیل اختصاصی</td>
+                            <td><span class="check-icon">✅</span></td>
+                            <td><span class="check-icon">✅</span></td>
+                            <td><span class="check-icon">✅</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">انتخاب سیستم‌عامل</td>
+                            <td><span class="cross-icon">❌</span> (لینوکس ثابت)</td>
+                            <td><span class="check-icon">✅</span></td>
+                            <td><span class="check-icon">✅</span></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.9rem; color: #888; margin-top: 2rem;">برای مشاهده پلن‌های دقیق‌تر و قیمت‌های به‌روز، به صفحه محصولات مراجعه کنید.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer glass-container">
+        <div class="footer-content">
+            <p>&copy; 2024 AriaHost. تمامی حقوق محفوظ است.</p>
+            <nav class="footer-nav">
+                <a href="legal/terms-of-service.html">قوانین و مقررات</a>
+                <a href="legal/privacy-policy.html">حریم خصوصی</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
