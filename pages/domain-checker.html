@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جستجوی دامنه | AriaHost</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* استایل‌های اختصاصی برای دامن چکر */
+        .domain-checker-section {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
 
+        .domain-search-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .domain-search-form input[type="text"] {
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border-radius: 8px 0 0 8px;
+            width: 70%;
+            transition: border-color 0.3s ease;
+        }
+
+        .domain-search-form input[type="text"]:focus {
+            border-color: #ffd700;
+            outline: none;
+        }
+
+        .domain-search-form button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 0 8px 8px 0;
+            border: none;
+            background: linear-gradient(145deg, #ffa500, #ff8c00);
+            color: #102a43;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .domain-search-form button:hover {
+            background: linear-gradient(145deg, #ff8c00, #ffa500);
+        }
+
+        .domain-results-area {
+            text-align: right;
+            padding: 2rem;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .domain-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .status-badge.available {
+            background-color: #2ecc71;
+            color: #102a43;
+        }
+
+        .status-badge.taken {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+        
+        .status-badge {
+            padding: 0.4rem 1rem;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header glass-container">
+        <div class="logo">
+            <a href="../index.html">AriaHost</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="https://yourwhmcsdomain.com/clientarea.php" class="btn glass-container">ناحیه کاربری</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="domain-checker-section glass-container">
+            <h1>جستجو و ثبت دامنه</h1>
+            <p style="font-size: 1.1rem; color: #ccc;">دامنه مورد نظر خود را جستجو کنید و فوراً ثبت کنید.</p>
+            
+            <form class="domain-search-form">
+                <input type="text" placeholder="مثال: YourCompany" required>
+                <button type="submit">جستجو</button>
+            </form>
+
+            <div class="domain-results-area">
+                <h2 style="font-size: 1.8rem; color: #fff; margin-bottom: 1.5rem;">نتایج پیشنهادی:</h2>
+                
+                <div class="result-item">
+                    <span class="domain-name">ariahost.com</span>
+                    <span class="status-badge taken">ثبت شده</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="domain-name">ariahost.net</span>
+                    <span class="status-badge available">موجود</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="domain-name">ariahost.ir</span>
+                    <span class="status-badge available">موجود</span>
+                </div>
+
+                <div class="result-item">
+                    <span class="domain-name">ariahost.cloud</span>
+                    <span class="status-badge available">موجود</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="domain-name">ariahost.shop</span>
+                    <span class="status-badge taken">ثبت شده</span>
+                </div>
+            </div>
+
+            <p style="font-size: 0.9rem; color: #888; margin-top: 2rem;">برای ثبت دامنه، به پنل کاربری WHMCS ارجاع داده خواهید شد.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer glass-container">
+        <div class="footer-content">
+            <p>&copy; 2024 AriaHost. تمامی حقوق محفوظ است.</p>
+            <nav class="footer-nav">
+                <a href="legal/terms-of-service.html">قوانین و مقررات</a>
+                <a href="legal/privacy-policy.html">حریم خصوصی</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
