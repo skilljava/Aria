@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وضعیت سرورها | AriaHost</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* استایل‌های اختصاصی برای وضعیت سرور */
+        .status-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 3rem;
+            text-align: right;
+        }
 
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-name {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .status-badge {
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .status-badge.online {
+            background-color: #2ecc71; /* سبز */
+            color: #102a43;
+        }
+
+        .status-badge.offline {
+            background-color: #e74c3c; /* قرمز */
+            color: #fff;
+        }
+
+        .status-badge.maintenance {
+            background-color: #f39c12; /* نارنجی */
+            color: #102a43;
+        }
+        
+        .status-last-update {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header glass-container">
+        <div class="logo">
+            <a href="../index.html">AriaHost</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="https://yourwhmcsdomain.com/clientarea.php" class="btn glass-container">ناحیه کاربری</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="status-container glass-container">
+            <h1 style="text-align: center; margin-bottom: 2rem;">وضعیت خدمات AriaHost</h1>
+            
+            <div class="status-item">
+                <span class="status-name">هاست اشتراکی لینوکس (آلمان)</span>
+                <span class="status-badge online">فعال</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-name">سرور مجازی گیمینگ پرولاین (آلمان)</span>
+                <span class="status-badge online">فعال</span>
+            </div>
+            
+            <div class="status-item">
+                <span class="status-name">شبکه سرورهای ایران (رسپینا/شاتل)</span>
+                <span class="status-badge online">فعال</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-name">سامانه ثبت دامنه و DNS</span>
+                <span class="status-badge online">فعال</span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-name">سرورهای اختصاصی Rust و FiveM (هلند)</span>
+                <span class="status-badge maintenance">در حال بروزرسانی</span>
+            </div>
+            
+            <div class="status-item">
+                <span class="status-name">پورتال و ناحیه کاربری (WHMCS)</span>
+                <span class="status-badge online">فعال</span>
+            </div>
+
+            <div class="status-last-update">
+                آخرین بروزرسانی: سه‌شنبه، ۱۲ مهر ۱۴۰۳، ساعت ۱۷:۰۰
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer glass-container">
+        <div class="footer-content">
+            <p>&copy; 2024 AriaHost. تمامی حقوق محفوظ است.</p>
+            <nav class="footer-nav">
+                <a href="legal/terms-of-service.html">قوانین و مقررات</a>
+                <a href="legal/privacy-policy.html">حریم خصوصی</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
