@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وبلاگ AriaHost | مقالات و آموزش‌ها</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* استایل‌های اختصاصی برای وبلاگ */
+        .blog-list {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
 
+        .blog-card {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            filter: grayscale(10%); 
+            transition: filter 0.3s ease;
+        }
+
+        .blog-card:hover img {
+            filter: grayscale(0%);
+        }
+
+        .blog-card h3 {
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+
+        .blog-card p {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-meta {
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 0.5rem;
+        }
+
+        .blog-meta span {
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header glass-container">
+        <div class="logo">
+            <a href="../index.html">AriaHost</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="https://yourwhmcsdomain.com/clientarea.php" class="btn glass-container">ناحیه کاربری</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <div class="hero-content" style="text-align: center;">
+                <h1 class="glass-container">وبلاگ AriaHost</h1>
+                <p>جدیدترین مقالات آموزشی، اخبار تکنولوژی و راهنمای میزبانی سرور.</p>
+            </div>
+        </section>
+
+        <section class="blog-list">
+            
+            <article class="blog-card glass-container">
+                <a href="blog-post.html?id=low-latency-vps">
+                    <img src="../assets/images/placeholder_vps.jpg" alt="سرورهای Low Latency">
+                    <h3>چگونه یک سرور مجازی با پینگ پایین انتخاب کنیم؟</h3>
+                    <p>بررسی عوامل موثر بر تأخیر (Latency) در بازی‌های آنلاین و روش‌های بهینه‌سازی شبکه سرور.</p>
+                </a>
+                <div class="blog-meta">
+                    <span>تاریخ: ۱۴۰۳/۰۹/۰۱</span>
+                    <span>نویسنده: تیم فنی</span>
+                </div>
+            </article>
+
+            <article class="blog-card glass-container">
+                <a href="blog-post.html?id=ddos-protection">
+                    <img src="../assets/images/placeholder_ddos.jpg" alt="محافظت DDoS">
+                    <h3>راهنمای کامل مقابله با حملات DDoS لایه ۷</h3>
+                    <p>آشنایی با انواع حملات دیداس و معرفی سرویس MaxGuard برای محافظت کامل از زیرساخت شما.</p>
+                </a>
+                <div class="blog-meta">
+                    <span>تاریخ: ۱۴۰۳/۰۸/۲۵</span>
+                    <span>نویسنده: بخش امنیت</span>
+                </div>
+            </article>
+
+            <article class="blog-card glass-container">
+                <a href="blog-post.html?id=ryzen-vs-xeon">
+                    <img src="../assets/images/placeholder_cpu.jpg" alt="پردازنده Ryzen و Xeon">
+                    <h3>AMD Ryzen در مقابل Intel Xeon: کدام بهتر است؟</h3>
+                    <p>مقایسه‌ای فنی و کاربردی بین جدیدترین نسل پردازنده‌های رایزن و زئون برای سرورهای مجازی.</p>
+                </a>
+                <div class="blog-meta">
+                    <span>تاریخ: ۱۴۰۳/۰۸/۱۸</span>
+                    <span>نویسنده: مهندس سخت‌افزار</span>
+                </div>
+            </article>
+            
+            </section>
+    </main>
+
+    <footer class="main-footer glass-container">
+        <div class="footer-content">
+            <p>&copy; 2024 AriaHost. تمامی حقوق محفوظ است.</p>
+            <nav class="footer-nav">
+                <a href="legal/terms-of-service.html">قوانین و مقررات</a>
+                <a href="legal/privacy-policy.html">حریم خصوصی</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
